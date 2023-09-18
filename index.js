@@ -37,6 +37,9 @@ async function generateCompletion(prompt) {
     throw error;
   }
 }
+app.get("/", req,res){
+  res.send("Hello codeee")
+}
 
 app.post("/convert", async (req, res) => {
   try {
